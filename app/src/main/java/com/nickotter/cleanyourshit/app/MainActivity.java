@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter;
 
 import com.nickotter.cleanyourshit.app.fragments.ChoresFragment;
 import com.nickotter.cleanyourshit.app.helpers.Chores;
-import com.nickotter.cleanyourshit.app.helpers.Day;
 
 
 public class MainActivity extends Activity implements ActionBar.OnNavigationListener {
