@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clean Your Shit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="chores_list_daily">E</string>
+    <string name="chores_list_specific">S</string>
+    <string name="placeholder_chore">Chore</string>
+
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="chores_default">
+        <item>make beds</item>
+        <item>wipe down counters &amp; sinks</item>
+        <item>empty/load dishwasher</item>
+        <item>vaccuum/sweep floors</item>
+        <item>laundry (1 load)</item>
+        <item>15 minute pick-up</item>
+        <item>sort mail</item>
+    </string-array>
+
+    <!-- Chores Monday -->
+    <string-array name="chores_1">
+        <item>clean kitchen sink &amp; drain</item>
+        <item>wipe down appliances</item>
+        <item>organize/empty fridge</item>
+        <item>mop kitchen floor</item>
+    </string-array>
+
+    <!-- Chores Tuesday -->
+    <string-array name="chores_2">
+        <item>clean toilets &amp; bath tubs</item>
+        <item>wipe down bathroom counters</item>
+        <item>clean sinks</item>
+        <item>clean mirrors</item>
+        <item>mop bathroom floors</item>
+    </string-array>
+
+    <!-- Chores Wednesday -->
+    <string-array name="chores_3">
+        <item>dust bedroom</item>
+        <item>vaccuum carpets</item>
+        <item>wash/change linens</item>
+        <item>empty trash</item>
+        <item>organize</item>
+    </string-array>
+
+    <!-- Chores Thursday -->
+    <string-array name="chores_4">
+        <item>dust living room</item>
+        <item>sweep/vaccuum hardwood</item>
+        <item>wipe down baseboards</item>
+        <item>quick foyer/closet pick-up</item>
+    </string-array>
+
+</resources>

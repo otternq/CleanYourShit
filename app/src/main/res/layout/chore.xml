@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="75dp">
+
+    <TextView
+        android:id="@+id/type"
+
+        android:padding="5dp"
+
+        android:layout_width="75dp"
+        android:layout_height="fill_parent"
+
+        android:background="@color/chores_list_daily_background"
+
+        android:gravity="center_horizontal|center_vertical"
+
+        android:text="@string/chores_list_daily"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18pt"
+
+        android:maxLength="2"/>
+    <TextView
+        android:id="@+id/chore"
+
+        android:padding="5dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+
+        android:gravity="center_vertical"
+
+        android:text="@string/placeholder_chore"
+        android:textSize="10pt" />
+
+
+</LinearLayout>
