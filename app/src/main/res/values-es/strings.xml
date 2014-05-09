@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="chores_list_daily">D</string> <!-- diario -->
+    <string name="chores_list_specific">E</string> <!-- específico -->
+    <string name="placeholder_chore">Faena</string>
+
+    <string-array name="days">
+        <item>Domingo</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+    </string-array>
+
+    <string-array name="chores_default">
+        <item>hacer las camas</item>
+        <item>limpie mostradores y fregaderos</item>
+        <item>Vaciar / Cargar el lavavajillas</item>
+        <item>pisos de barrido y vacío</item>
+        <item>lavandería</item>
+        <item>15 minutos a limpiar</item>
+        <item>correo especie</item>
+    </string-array>
+
+    <!-- Chores Monday -->
+    <string-array name="chores_1">
+        <item>limpia cocina fregadero y desagüe</item>
+        <item>limpiar electrodomésticos</item>
+        <item>organizar / nevera vacía</item>
+        <item>suelo de la cocina fregona</item>
+    </string-array>
+
+    <!-- Chores Tuesday -->
+    <string-array name="chores_2">
+        <item>baños limpios y bañeras</item>
+        <item>limpie mostradores de baño</item>
+        <item>sumideros limpios</item>
+        <item>espejos limpios</item>
+        <item>pisos de baño mop</item>
+    </string-array>
+
+    <!-- Chores Wednesday -->
+    <string-array name="chores_3">
+        <item>dormitorio polvo</item>
+        <item>alfombras de vacío</item>
+        <item>lavar / cambiar sábanas</item>
+        <item>vaciar papelera</item>
+        <item>organizar</item>
+    </string-array>
+
+    <!-- Chores Thursday -->
+    <string-array name="chores_4">
+        <item>polvo de la sala de estar</item>
+        <item>madera barrido / vacío</item>
+        <item>limpiar los rodapiés</item>
+        <item>vestíbulo limpio y closet</item>
+    </string-array>
+
+</resources>
