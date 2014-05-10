@@ -55,4 +55,21 @@ public class ActionBarHelper {
 
     }
 
+    public static boolean setNavigationSelected(Activity activity, ArrayAdapter<String> adapter, String selected)
+    {
+
+        ActionBar actionBar = activity.getActionBar();
+
+        if (actionBar != null) {
+
+            int setPosition = adapter.getPosition(selected);
+            actionBar.setSelectedNavigationItem(setPosition);
+
+            return true;
+
+        }
+
+        return false;
+    }
+
 }

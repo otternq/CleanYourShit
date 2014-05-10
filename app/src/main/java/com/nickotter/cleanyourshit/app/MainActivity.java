@@ -6,7 +6,12 @@ import android.widget.ArrayAdapter;
 
 import com.nickotter.cleanyourshit.app.fragments.ChoresFragment;
 import com.nickotter.cleanyourshit.app.helpers.ActionBarHelper;
+import com.nickotter.cleanyourshit.app.helpers.DateHelper;
 import com.nickotter.cleanyourshit.app.navigationListeners.MainNavigationListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class MainActivity extends Activity {
@@ -37,6 +42,12 @@ public class MainActivity extends Activity {
                         choreFragment,
                         dayAdapter
                 )
+            );
+
+            ActionBarHelper.setNavigationSelected(
+                this,
+                dayAdapter,
+                DateHelper.getCurrentDayString()
             );
 
         }
