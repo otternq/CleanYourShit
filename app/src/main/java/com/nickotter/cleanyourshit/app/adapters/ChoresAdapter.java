@@ -1,7 +1,6 @@
 package com.nickotter.cleanyourshit.app.adapters;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import com.nickotter.cleanyourshit.app.helpers.ChoresWrapper;
 import java.util.List;
 
 /**
- * Created by otternq on 5/7/14.
+ * Makes an adapter for the ChoresWrapper object
  */
 public class ChoresAdapter extends ArrayAdapter<ChoresWrapper> {
 
@@ -40,7 +39,7 @@ public class ChoresAdapter extends ArrayAdapter<ChoresWrapper> {
         int backgroundColorId;
 
         if (chore.day != null) {
-            typeTextView.setText(chore.day.toString().toUpperCase());
+            typeTextView.setText(chore.day.toUpperCase());
 
             textColorId = R.color.chores_list_specific_text;
             backgroundColorId = R.color.chores_list_specific_background;

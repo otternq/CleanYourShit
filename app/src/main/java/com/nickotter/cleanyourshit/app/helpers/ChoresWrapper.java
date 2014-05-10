@@ -1,7 +1,7 @@
 package com.nickotter.cleanyourshit.app.helpers;
 
 /**
- * Created by otternq on 5/7/14.
+ *  Stores chores along with the day they are associated with
  */
 public class ChoresWrapper implements Comparable<ChoresWrapper> {
 

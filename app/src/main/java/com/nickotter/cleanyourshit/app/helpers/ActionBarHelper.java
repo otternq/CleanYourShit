@@ -2,14 +2,8 @@ package com.nickotter.cleanyourshit.app.helpers;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Context;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.SpinnerAdapter;
-
-import com.nickotter.cleanyourshit.app.MainActivity;
-import com.nickotter.cleanyourshit.app.fragments.ChoresFragment;
-import com.nickotter.cleanyourshit.app.navigationListeners.MainNavigationListener;
 
 /**
  * A set of functions to help with action bar actions
@@ -17,10 +11,10 @@ import com.nickotter.cleanyourshit.app.navigationListeners.MainNavigationListene
 public class ActionBarHelper {
 
     /**
+     * Prepares a correctly colored ArrayAdapter for a given theme
      *
      * @param activity
      * @param items
-     * @return
      */
     public static ArrayAdapter<String> provideNavigationAdapter(Activity activity, String[] items) {
 
@@ -28,13 +22,11 @@ public class ActionBarHelper {
 
         if (actionBar != null) {
 
-            ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(
+            return new ArrayAdapter<String>(
                     actionBar.getThemedContext() != null ? actionBar.getThemedContext() : activity,
                     android.R.layout.simple_list_item_1,
                     items
             );
-
-            return itemsAdapter;
 
         }
 

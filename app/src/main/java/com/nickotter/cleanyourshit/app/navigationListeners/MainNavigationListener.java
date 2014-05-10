@@ -3,11 +3,10 @@ package com.nickotter.cleanyourshit.app.navigationListeners;
 import android.app.ActionBar;
 import android.content.Context;
 import android.widget.ArrayAdapter;
-import android.widget.SpinnerAdapter;
 
 import com.nickotter.cleanyourshit.app.adapters.ChoresAdapter;
 import com.nickotter.cleanyourshit.app.fragments.ChoresFragment;
-import com.nickotter.cleanyourshit.app.helpers.Chores;
+import com.nickotter.cleanyourshit.app.helpers.ChoresResources;
 
 /**
  * Listens for Navigation and updates the Chores list
@@ -32,7 +31,7 @@ public class MainNavigationListener implements ActionBar.OnNavigationListener {
         choresFragment.setChoresAdapter(
             new ChoresAdapter(
                     this.context,
-                    Chores.asWrapperForDay(this.context, day)
+                    ChoresResources.getListForDay(this.context, day)
             )
         );
 

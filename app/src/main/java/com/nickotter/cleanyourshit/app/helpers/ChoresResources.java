@@ -6,14 +6,13 @@ import com.nickotter.cleanyourshit.app.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 
 /**
- * Created by otternq on 5/7/14.
+ * Functions to access Chores string resources
  */
-public class Chores {
+public class ChoresResources {
 
     private static String[] getSpecificChores(Context context, String day) {
 
@@ -36,30 +35,18 @@ public class Chores {
 
     }
 
-    private static String[] getDailyChores(Context context, String day) {
+    private static String[] getDailyChores(Context context) {
         return context.getResources().getStringArray(R.array.chores_default);
     }
 
-    public static List<String> asStringForDay(Context context, String day)
-    {
-
-        List<String> chores = new ArrayList<String>();
-
-        chores.addAll(Arrays.asList(getSpecificChores(context, day)));
-        chores.addAll(Arrays.asList(getDailyChores(context, day)));
-
-        return chores;
-
-    }
-
-    public static List<ChoresWrapper> asWrapperForDay(Context context, String day) {
+    public static List<ChoresWrapper> getListForDay(Context context, String day) {
 
         List<ChoresWrapper> chores = new ArrayList<ChoresWrapper>();
 
         String[] specificChores = getSpecificChores(context, day);
         Arrays.sort(specificChores);
 
-        String[] dailyChores = getDailyChores(context, day);
+        String[] dailyChores = getDailyChores(context);
         Arrays.sort(dailyChores);
 
         for(String chore : specificChores) {
